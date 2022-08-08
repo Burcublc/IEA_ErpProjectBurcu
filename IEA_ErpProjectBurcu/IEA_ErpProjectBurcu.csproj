@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{285DAD09-909B-41DF-BF7F-93DF75D367B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IEA_ErpProjectBurcu</RootNamespace>
+    <AssemblyName>IEA_ErpProjectBurcu</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorGiris.Designer.cs">
+      <DependentUpon>DoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorlarListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\DoktorlarListesi.Designer.cs">
+      <DependentUpon>DoktorlarListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Doktorlar\Unvan.cs" />
+    <Compile Include="BilgiGiris\Firmalar\FirmaDetayEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaDetayEkle.Designer.cs">
+      <DependentUpon>FirmaDetayEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaDetayGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaDetayGoster.Designer.cs">
+      <DependentUpon>FirmaDetayGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaGiris.Designer.cs">
+      <DependentUpon>FirmaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmalarListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmalarListesi.Designer.cs">
+      <DependentUpon>FirmalarListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Firmalar\FirmaTip.cs" />
+    <Compile Include="BilgiGiris\Hastaneler\HastaneDetayEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastaneDetayEkle.Designer.cs">
+      <DependentUpon>HastaneDetayEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastaneDetayGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastaneDetayGoster.Designer.cs">
+      <DependentUpon>HastaneDetayGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastaneGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastaneGiris.Designer.cs">
+      <DependentUpon>HastaneGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastanelerListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGiris\Hastaneler\HastanelerListesi.Designer.cs">
+      <DependentUpon>HastanelerListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\ErpProModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErpProModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\ErpProModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\ErpProModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Sehirler.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sysdiagrams.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblDepartmanlar.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblDoktorlar.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblFirmaDetaylar.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblFirmalar.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblHastaneDetaylar.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblHastaneler.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tblHastaneTipleri.cs">
+      <DependentUpon>ErpProModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fonksiyonlar\Formlar.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Doktorlar\DoktorGiris.resx">
+      <DependentUpon>DoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Doktorlar\DoktorlarListesi.resx">
+      <DependentUpon>DoktorlarListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Firmalar\FirmaDetayEkle.resx">
+      <DependentUpon>FirmaDetayEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Firmalar\FirmaDetayGoster.resx">
+      <DependentUpon>FirmaDetayGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Firmalar\FirmaGiris.resx">
+      <DependentUpon>FirmaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Firmalar\FirmalarListesi.resx">
+      <DependentUpon>FirmalarListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Hastaneler\HastaneDetayEkle.resx">
+      <DependentUpon>HastaneDetayEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Hastaneler\HastaneDetayGoster.resx">
+      <DependentUpon>HastaneDetayGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Hastaneler\HastaneGiris.resx">
+      <DependentUpon>HastaneGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilgiGiris\Hastaneler\HastanelerListesi.resx">
+      <DependentUpon>HastanelerListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Entity\ErpProModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ErpProModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entity\ErpProModel.edmx.diagram">
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BilgiGiris\Personeller\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entity\ErpProModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ErpProModel.Context.cs</LastGenOutput>
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entity\ErpProModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ErpProModel.edmx</DependentUpon>
+      <LastGenOutput>ErpProModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\Ara32x323.png" />
+    <None Include="Resources\RightLeft2Red1.ico" />
+    <None Include="Resources\temizleicon2.png" />
+    <None Include="Resources\cop24x242.png" />
+    <None Include="Resources\Update32x322.png" />
+    <None Include="Resources\Save-icon64x643.png" />
+    <None Include="Resources\Save-icon64x642.png" />
+    <None Include="Resources\exit-641.png" />
+    <None Include="Resources\temizleicon1.png" />
+    <None Include="Resources\cop24x241.png" />
+    <None Include="Resources\Update32x321.png" />
+    <None Include="Resources\Save-icon64x641.png" />
+    <None Include="Resources\Ara32x322.png" />
+    <None Include="Resources\exit-64.png" />
+    <None Include="Resources\temizleicon.png" />
+    <None Include="Resources\cop24x24.png" />
+    <None Include="Resources\Update32x32.png" />
+    <None Include="Resources\Save-icon64x64.png" />
+    <None Include="Resources\Ara32x321.png" />
+    <None Include="Resources\RightLeft2Red.ico" />
+    <None Include="Resources\Ara32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
